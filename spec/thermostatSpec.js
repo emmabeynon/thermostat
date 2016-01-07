@@ -77,18 +77,18 @@ describe("thermostat", function() {
       for (i=0; i < 3; i++) {
         thermostat.downButton();
       }
-      expect(thermostat.temperatureDisplay()).toBe('low usage');
+      expect(thermostat.temperatureDisplay()).toBe('low');
     });
 
     it('displays medium-usage if below 25 degrees', function(){
-      expect(thermostat.temperatureDisplay()).toBe('medium usage');
+      expect(thermostat.temperatureDisplay()).toBe('medium');
     });
     it('displays high-usage if above 25 degrees', function(){
       thermostat.powerSavingModeOff();
       for (i=0; i < 6; i++) {
         thermostat.upButton();
       }
-      expect(thermostat.temperatureDisplay()).toBe('high usage');
+      expect(thermostat.temperatureDisplay()).toBe('high');
     });
   });
 });
