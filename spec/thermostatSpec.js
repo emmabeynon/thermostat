@@ -53,6 +53,15 @@ describe("thermostat", function() {
       thermostat.powerSavingModeOff();
       expect(thermostat.maximumTemperature).toBe(32);
     });
+
+    it('when on and temperature is above 25 degrees, lowers to 25 degrees', function() {
+      thermostat.powerSavingModeOff();
+      for (i=0; i < 6; i++) {
+        thermostat.upButton();
+      }
+      thermostat.powerSavingModeOn();
+      expect(thermostat.temperature).toBe(25);
+    });
   });
 
   describe('reset', function() {
