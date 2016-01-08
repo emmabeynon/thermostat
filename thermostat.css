@@ -1,3 +1,7 @@
+* {
+  font-family: Arial;
+  color: white;
+}
 .low {
   color: green;
 }
@@ -8,4 +12,68 @@
 
 .high {
   color: red;
+}
+
+.button {
+  background-color: grey;
+  border: white 1px solid;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  font-size: 22px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+.font-size {
+  font-size: 50px;
+}
+
+h1 {
+  color: black;
+}
+#thermostat {
+  border: 10px solid red;
+  background-color: black;
+  height: 400px;
+  width: 400px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+#temperature-display {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  margin: 10px;
+  background-color: grey;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 42px;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+
+.current-temperature {
+  color: black;
+}
+
+#current-temperature {
+  color: black;
+}
+.wrapper {
+  text-align: center;
+}
+
+#temperature-up {
+  width: 50px;
+  margin-top:20px;
+}
+
+#temperature-down {
+  margin-top:20px;
+  width: 50px;
 }

@@ -7,16 +7,22 @@
   <link href="thermostat.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-  <h1>Thermostat</h1>
-  <p>Temperature: <span id="temperature"></span>&deg;C</p>
-  <p>
-    <button id="temperature-up">+</button>
-    <button id="temperature-down">-</button>
-    <button id="temperature-reset">Reset</button>
-  </p>
-  <p>Power Saving Mode: <span id="powersaving-status"></span></p>
-  <button id="powersaving-on">On</button>
-  <button id="powersaving-off">Off</button>
+  <div class="wrapper">
+    <h1>Thermostat</h1>
+    <div id="thermostat">
+        <button id="temperature-up" class="button">+</button>
+        <button id="temperature-down" class="button">-</button>
+        <br>
+        <button id="temperature-reset" class="button">Reset</button>
+        <br>
+      <div id="temperature-display">
+        <span id="temperature"></span>
+        <span>&deg;C</span>
+    </div>
+    <p>Power Saving Mode: <span id="powersaving-status"></span></p>
+    <button id="powersaving-on" class="button">On</button>
+    <button id="powersaving-off" class="button">Off</button>
+  </div>
   <p>
     <select id="cities">
       <option value="London">London</option>
@@ -25,5 +31,5 @@
       <option value="Edinburgh">Edinburgh</option>
     </select>
   <p>
-  <p>Current Temperature: <span id="current-temperature"></span>&deg;C</p>
+  <p class="current-temperature">Current Temperature: <span id="current-temperature"></span>&deg;C</p>
 </body>
