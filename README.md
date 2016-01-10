@@ -16,6 +16,7 @@ For this project I have learned JavaScript and jQuery to build a thermostat.  HT
 
 User Stories
 ------------
+```
 As a User
 So that it's not too cold
 I would like a default temperature of 20C
@@ -55,11 +56,12 @@ I would like as colour displayed to indicate the energy usage level
 As a User
 So that I can make the right decision about choosing the temperature
 I would like to see what my city's current temperature is
-
+```
 
 Instructions
 ------------
-1.
+1. Fork this repo.
+2. Open index.html in your browser.
 
 Approach
 ---------
