@@ -67,9 +67,7 @@ To start off, I wrote a JavaScript programme that enables the thermostat to perf
 
 With the business logic in place, I moved on to using HTML and jQuery to build the interface.  As a first step I built a rough outline of the page in HTML and added the necessary buttons for increasing, decreasing and resetting the temperature, as well setting the power saving mode to on or off.  Then, I used the jQuery text() method to display the current temperature on the page.  Next I added functionality to the buttons using click events to trigger the relevant JavaScript method.  However, while the buttons were working and I could see the change to temperature in the console, it wasn't displaying on the page.  So I added the text method I created to display the current temperature to a function called updateTemperature, which is called by each button after their temperature changing function is called.  I also wanted the user to be able to see if power saving mode is on or off, so I created a function to display "On" or "Off" on the page, which is called after the power saving mode methods are called.  Next, I integrated the energy usage levels by using the attr method to set the class of the temperature depending on its usage level.  Green is displayed for low usage, orange for medium usage and red for high usage.
 
-AJAX - Weather
-
-The last step was styling...
+The final user story requires displaying the current temperature for the user's city.  I used the OpenWeatherMap API as the data source, and AJAX to request the data without having to refresh the page.  The user can select a city from the dropdown menu and the page will display that city's current temperature.
 
 Further Work
 -------------
